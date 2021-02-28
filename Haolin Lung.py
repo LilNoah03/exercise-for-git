@@ -11,3 +11,11 @@ Hints: In case of input data being supplied to the question, it should be assume
 编写一个程序，可以计算给定数字的阶乘。结果应以逗号分隔的顺序打印在一行上。假设将以下输入提供给程序：8然后，输出应为：40320
 提示：如果将输入数据提供给问题，则应假定它是控制台输入。
 """
+def factorical(n):
+    if n > 0:
+        return n * factorical(n-1)
+    else:
+        return 1
+
+n = int(input())
+print(factorical(n))

@@ -14,3 +14,8 @@ can convert list to tuple
 
 提示：如果将输入数据提供给问题，则应假定它是控制台输入。tuple（）方法可以将列表转换为元组
 """
+values = input()
+l = values.split(",")
+t = tuple(l)
+print(l)
+print(t)
