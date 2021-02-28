@@ -20,3 +20,15 @@ In case of input data being supplied to the question, it should be assumed to be
 
 提示：如果接收到的输出为十进制形式，则应四舍五入至最接近的值（例如，如果接收到的输出为26.0，则应将其打印为26）。应假定为控制台输入。
 """
+
+import math
+
+c = 50
+h = 30
+list1 = []
+list2 = input().split(',')
+for d in list2:
+    outcome = math.sqrt(2 * c * float(d) / h)
+    come = str(int(outcome))
+    list1.append(come)
+print(','.join(list1))
